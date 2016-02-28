@@ -1,22 +1,4 @@
-co = require 'co'
-
-Start = 0
-do Reset = -> Start = new Date             
-
-log = (text)->
-  console.log "[#{(new Date)-Start}] #{text}"
-
-delay = (ms)->
-  new Promise (ok, fail)->
-    log "Started timer for #{ms}"
-    setTimeout ->
-      if 666!=ms
-        log "Elapsed: #{ms}"
-        ok ms
-      else
-        log "Oops: #{ms}"
-        fail Error "Waiting for #{ms}"
-    , ms
+{log, delay, co} = require './common'
 
 co ->
   log "Resolved #{yield delay 1000}"
