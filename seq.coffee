@@ -1,11 +1,11 @@
-{log, delay} = require './common'
+{list, log, delay} = require './common'
 
 delay 1000
 .then (i)->
   log "Resolved #{i}"
 .then ->
   x = Promise.resolve()
-  [20, 10, 30].forEach (n)->
+  list.forEach (n)->
     x = x
     .then ->
       delay n

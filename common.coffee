@@ -1,5 +1,7 @@
 @co = require 'co'
 
+@list = [20, 10, 30]
+
 Start = new Date             
 
 @log = log = (text)->
