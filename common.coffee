@@ -1,7 +1,6 @@
 @co = require 'co'
 
-Start = 0
-do Reset = -> Start = new Date             
+Start = new Date             
 
 @log = log = (text)->
   console.log "[#{(new Date)-Start}] #{text}"
