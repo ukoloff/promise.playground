@@ -1,10 +1,10 @@
-{log, delay} = require './common'
+{list, log, delay} = require './common'
 
 delay 1000
 .then (i)->
   log "Resolved #{i}"
 .then ->
-  [20, 10, 30].reduce (x, n)->
+  list.reduce (x, n)->
     x
     .then ->
       delay n

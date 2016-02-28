@@ -1,9 +1,9 @@
-{log, delay, co} = require './common'
+{list, log, delay, co} = require './common'
 
 co ->
   log "Resolved #{yield delay 1000}"
 
-  for p in [20, 10, 30].map delay
+  for p in list.map delay
     log "Chapter #{yield p}"
 
   0
