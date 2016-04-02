@@ -1,6 +1,6 @@
 # promise.playground
 
-Упражнения по поводу https://habrahabr.ru/post/209662/ на CoffeeScript.
+Упражнения по поводу https://habrahabr.ru/post/209662/ ([Source](http://www.html5rocks.com/en/tutorials/es6/promises/)) на CoffeeScript.
 
 # Задачи
 
